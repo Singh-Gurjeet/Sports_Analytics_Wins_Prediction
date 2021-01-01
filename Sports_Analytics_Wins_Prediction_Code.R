@@ -43,26 +43,27 @@ with(MoneyBall, hist(TEAM_FIELDING_E, breaks = "FD", col = "light blue")); box()
 with(MoneyBall, hist(TEAM_FIELDING_DP, breaks = "FD", col = "light blue")); box();
 par(mfrow = c(1,1))
 
+
 #check the normal distribution using QQplot
 par(mfrow = c(3,3))
-with(MoneyBall, qqPlot(TEAM_BATTING_H, labels=row.names(MoneyBall), 
-                            main="QQ-Plot Batting H", col = "blue",id.n=3));
-with(MoneyBall, qqPlot(TEAM_BATTING_BB, labels=row.names(MoneyBall),
-                            main="QQ-Plot Batting BB", col = "blue",id.n=3));
-with(MoneyBall, qqPlot(TEAM_BATTING_SO, labels=row.names(MoneyBall),
-                            main="QQ-Plot Batting SO", col = "blue",id.n=3));
-with(MoneyBall, qqPlot(TEAM_BASERUN_SB, labels=row.names(MoneyBall),
-                            main="QQ-Plot Baserun SB", col = "blue",id.n=3));
-with(MoneyBall, qqPlot(TEAM_BASERUN_CS, labels=row.names(MoneyBall),
-                            main="QQ-Plot Baserun CS", col = "blue",id.n=3));
-with(MoneyBall, qqPlot(TEAM_PITCHING_H, labels=row.names(MoneyBall),
-                            main="QQ-Plot Pitching H",col = "blue", id.n=3));
-with(MoneyBall, qqPlot(TEAM_PITCHING_BB, labels=row.names(MoneyBall),
-                            main="QQ-Plot Pitching BB",col = "blue", id.n=3));
-with(MoneyBall, qqPlot(TEAM_PITCHING_SO, labels=row.names(MoneyBall)
-                            ,main="QQ-Plot Pitching SO",col = "blue", id.n=3));
-with(MoneyBall, qqPlot(TEAM_FIELDING_E, labels=row.names(MoneyBall),
-                            main="QQ-Plot Fielding E",col = "blue", id.n=3));
+with(MoneyBall, qqPlot(TEAM_BATTING_H,  
+                            main="QQ-Plot Batting H", col = "blue"));
+with(MoneyBall, qqPlot(TEAM_BATTING_BB, 
+                            main="QQ-Plot Batting BB", col = "blue"));
+with(MoneyBall, qqPlot(TEAM_BATTING_SO, 
+                            main="QQ-Plot Batting SO", col = "blue"));
+with(MoneyBall, qqPlot(TEAM_BASERUN_SB, 
+                            main="QQ-Plot Baserun SB", col = "blue"));
+with(MoneyBall, qqPlot(TEAM_BASERUN_CS, 
+                            main="QQ-Plot Baserun CS", col = "blue"));
+with(MoneyBall, qqPlot(TEAM_PITCHING_H, 
+                            main="QQ-Plot Pitching H",col = "blue"));
+with(MoneyBall, qqPlot(TEAM_PITCHING_BB, 
+                            main="QQ-Plot Pitching BB",col = "blue"));
+with(MoneyBall, qqPlot(TEAM_PITCHING_SO, 
+                            main="QQ-Plot Pitching SO",col = "blue"));
+with(MoneyBall, qqPlot(TEAM_FIELDING_E, 
+                            main="QQ-Plot Fielding E",col = "blue"));
 par(mfrow = c(1,1))
 
 ##Examine Relationships
